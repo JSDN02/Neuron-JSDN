@@ -6,23 +6,26 @@
     <title>Services</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script defer src="JS/scrypt.js"></script>
 </head>
 <body>
     <!-- Header -->
 
     <header class="header" >
         <a href="#"><img class="header__image" src="Media/Assets/logo/logo-black.svg" alt="logo"></a>
-        <nav class="header-nav" >
+        <nav id="menuNav" class="header__nav active">
             <ul>
                 <li class="header__link"><a href="index.html">Home</a></li>
-                <li class="header__link active"><a href="#">Services</a></li>
+                <li class="header__link active"><a href="services.html">Services</a></li>
                 <li class="header__link"><a href="about-us.html">About us</a></li>
                 <li class="header__link"><a href="news.html">News</a></li>
                 <li class="header__link"><a href="#price">Price</a></li>
                 <li class="header__link"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <span class="material-symbols-outlined">menu</span>
+        <button onclick="toggleMenu()" class="togglebtn">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
 
     </header>
 
