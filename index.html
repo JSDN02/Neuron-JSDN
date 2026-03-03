@@ -7,13 +7,14 @@
     <title>Neuron</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script defer src="JS/scrypt.js"></script>
 </head>
 <body>
     <!-- Header -->
 
-    <header class="header" >
+    <header id="header" class="header" >
         <a href="#"><img class="header__image" src="Media/Assets/logo/logo-black.svg" alt="Logo"></a>
-        <nav class="header-nav" >
+        <nav id="menuNav" class="header__nav active">
             <ul>
                 <li class="header__link active"><a href="#">Home</a></li>
                 <li class="header__link"><a href="services.html">Services</a></li>
@@ -23,7 +24,10 @@
                 <li class="header__link"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <span class="material-symbols-outlined">menu</span>
+        <button onclick="toggleMenu()" class="togglebtn">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        
 
     </header>
 

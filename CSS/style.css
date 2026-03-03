@@ -47,6 +47,12 @@ a {
     gap: 10px;
     justify-content: center;
 }
+
+button {
+    background-color:unset;
+    border: none;
+    
+}
 /* / Reset CSS */
 
 /* Components */
@@ -177,7 +183,7 @@ a, .link li {
     max-width: 5.75rem;
 }
 
-.header-nav ul {
+.header__nav ul {
     display: flex;
     gap: 2rem;
 }
@@ -695,14 +701,48 @@ form {
 /* Menu Responsive */
 @media (max-width: 720px){
 /* Ocultar Nav Desktop */
-    .header-nav ul {
+    .header__nav ul {
         display: none;
     }
+
+    .header__nav.active ul {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: start;
+        padding: 2rem;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--color-light);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .header__nav ul li a {
+        font: 400 clamp(1.5rem, 5vw, 2rem) var(--font-titles);
+    }
+
+    .togglebtn {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+    }
+
+
 }
 @media (min-width: 720px){
 
-    .header span {
+    .header button {
         display: none;
+    }
+}
+
+@media (max-width: 720px){
+    .header__nav.active {
+        display: flex;
+
     }
 }
 /* Banner Centrado Responsive */
@@ -776,7 +816,6 @@ form {
     }
 } 
 
-/* Es jodido */
 
 /* Movil Pequeño 360px - 380px
 Movil Grande 720px
