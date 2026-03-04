@@ -718,18 +718,23 @@ form {
         background-color: var(--color-light);
         width: 100vw;
         height: 100vh;
+
+        
     }
 
     .header__nav ul li a {
         font: 400 clamp(1.5rem, 5vw, 2rem) var(--font-titles);
     }
 
-    .togglebtn {
+    .togglebtn.active {
         position: fixed;
         top: 1rem;
         right: 1rem;
     }
 
+
+
+    
 
 }
 @media (min-width: 720px){

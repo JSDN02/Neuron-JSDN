@@ -3,4 +3,5 @@ let menuBtn = document.getElementById('togglebtn')
 
 function toggleMenu() {
     menuBurger.classList.toggle('active')
+    menuBtn.classList.toggle('active')
 }
